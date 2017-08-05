@@ -52,22 +52,6 @@ a {
 	transition: all .3s;
 }
 
-#DonateText {
-	position: fixed;
-	font-size: 12px;
-	width: 70px;
-	height: 70px;
-	line-height: 70px;
-	color: #fff;
-	background: #ffd886 url(../img/like.svg) no-repeat center 10px;
-	background-size: 20px;
-	border-radius: 35px;
-	text-align: center;
-	left: calc(50% - 120px);
-	top: calc(50% - 60px);
-	z-index: -1;
-	transform: rotatez(-15deg);
-}
 
 #donateBox {
 	left: calc(50% - 150px);
