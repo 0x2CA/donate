@@ -1,10 +1,10 @@
 jQuery(document).ready(function() {
 	var QRBox	=	$('#QRBox');
 	var MainBox	=	$('#MainBox');
-	var AliPayQR	=	'images/AliPayQR.png';
-	var WeChanQR	=	'images/WeChanQR.png';
+	var AliPayQR	=	'img/AliPayQR.png';
+	var WeChanQR	=	'img/WeChanQR.png';
 
-	
+
 
 	function showQR(QR) {
 		if (QR) {
