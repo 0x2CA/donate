@@ -75,7 +75,7 @@ a {
 	cursor: pointer;
 	overflow: hidden;
 	line-height: 600px;
-	height: 28px;
+	height: 29px;
 	-webkit-filter: grayscale(1);
 	filter: grayscale(1);
 	opacity: 0.5;
