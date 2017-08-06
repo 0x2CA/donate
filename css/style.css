@@ -278,11 +278,10 @@ a {
 	}
 }
 
-#ps{
+#donateText{
 	font-family: "Helvetica Neue", Ubuntu, "WenQuanYi Micro Hei", Helvetica, "Hiragino Sans GB", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Micro Hei Mono", "WenQuanYi Zen Hei", "WenQuanYi Zen Hei", "Apple LiGothic Medium", "SimHei", "ST Heiti", "WenQuanYi Zen Hei Sharp", Arial, sans-serif;
 	font-size: 14px;
 	color: #666;
 	left: calc(50% - 14px);
 	top: calc(50% - 52px);
-	position: absolute;
 }
