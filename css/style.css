@@ -26,8 +26,7 @@ a {
 }
 
 .list,
-.list li,
-.list-left li {
+.list li{
 	list-style: none;
 	list-style-type: none;
 	margin: 0px;
@@ -51,7 +50,6 @@ a {
 .tr3 {
 	transition: all .3s;
 }
-
 
 #donateBox {
 	left: calc(50% - 150px);
@@ -101,6 +99,7 @@ a {
 #donateBox #AliPay {
 	background-image: url(../img/alipay.svg);
 }
+
 #donateBox #WeChat {
 	background-image: url(../img/wechat.svg);
 }
@@ -133,15 +132,6 @@ a {
 	overflow: hidden;
 }
 
-#btc-key {
-	opacity: 0;
-	width: 2px;
-	height: 8px;
-	overflow: hidden;
-	left: -2px;
-	top: -8px;
-}
-
 #github {
 	width: 24px;
 	height: 24px;
@@ -151,57 +141,6 @@ a {
 	background-size: contain;
 	opacity: 0.3;
 	transform: rotatez(15deg);
-}
-
-[data-footnote] {
-	position: relative;
-	overflow: hidden;
-}
-
-[data-footnote]:hover {
-	overflow: visible;
-}
-
-[data-footnote]::before,
-[data-footnote]::after {
-	position: absolute;
-	transition: all .3s;
-	transform: translate3d(-50%, 0, 0);
-	opacity: 0;
-	left: 37px;
-	z-index: 10;
-}
-
-[data-footnote]::before {
-	content: attr(data-footnote);
-	border-radius: 6px;
-	background-color: rgba(100, 100, 100, 0.8);
-	color: #fff;
-	height: 24px;
-	line-height: 24px;
-	padding: 0 6px;
-	font-size: 12px;
-	white-space: nowrap;
-	top: -24px;
-	left: 37px;
-}
-
-[data-footnote]::after {
-	content: '';
-	border: 5px solid #333;
-	border-color: rgba(100, 100, 100, 0.8) transparent transparent transparent;
-	top: 0;
-	left: 37px;
-}
-
-[data-footnote]:hover::before,
-[data-footnote]:hover::after {
-	opacity: 1;
-}
-
-[data-footnote]:hover::before,
-[data-footnote]:hover::after {
-	transform: translate3d(-50%, -7px, 0);
 }
 
 #MainBox.showQR {
@@ -215,7 +154,7 @@ a {
 }
 
 @keyframes showQR {
-	from {
+	0% {
 		transform: rotateX(90deg);
 	}
 	8% {
@@ -250,7 +189,7 @@ a {
 		opacity: 1;
 		transform: rotateX(2deg);
 	}
-	to {
+	100% {
 		opacity: 1;
 	}
 }
@@ -266,20 +205,19 @@ a {
 }
 
 @keyframes hideQR {
-	from {}
+	0% {}
 	20%,
 	50% {
 		transform: scale(1.08, 1.08);
 		opacity: 1;
 	}
-	to {
+	100% {
 		opacity: 0;
 		transform: rotateZ(40deg) scale(0.6, 0.6);
 	}
 }
 
-#donateText{
-	font-family: "Helvetica Neue", Ubuntu, "WenQuanYi Micro Hei", Helvetica, "Hiragino Sans GB", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Micro Hei Mono", "WenQuanYi Zen Hei", "WenQuanYi Zen Hei", "Apple LiGothic Medium", "SimHei", "ST Heiti", "WenQuanYi Zen Hei Sharp", Arial, sans-serif;
+#donateText {
 	font-size: 14px;
 	color: #666;
 	left: calc(50% - 14px);
